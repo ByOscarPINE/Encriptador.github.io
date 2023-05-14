@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncriptadorSKL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/T.png">
+    <meta name="viewport" content="width=device-width,uu initial-scale=1.0">
+</head>
+</html>
+<body id="body">
+    <header>
+        <img src="img/Logo.png" alt="Logo" id="logoS">
+    </header>
+    <main>
+        <div class="lamp">
+            <div class="cord"></div>
+            <div class="bulb"></div>
+        </div>
+        <section>
+            <textarea class="text-inp" autofocus type="text" name="text-INP" id="text-INP" placeholder="Ingrese su texto aqui" oninput="caracteresPerm()"></textarea>
+            <div>
+                <img src="img/Vector.png" alt="Vector" id="vectorS">
+                <p id="alert1">Ingresa solo letras minusculas</p>
+            </div>
+        </section>
+        <section>
+            <div class="btns1">
+                <input class="btn" type="button" value="Encriptar" id="boton-ENC">
+                <input class="btn" type="button" value="Desencriptar" id="boton-DES">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+                <ul class="wrapper">
+                    <li class="icon github" id="iconG">
+                        <span class="tooltip">Github</span>
+                        <span><i class="fab fa-github"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <aside>
+                <div class="panel1" id="panel1s">
+                    <img src="img/Busc.png" alt="Cat" id="munecoS">
+                    <h1>Ningun mensaje fue encontrado</h1>
+                    <p1>Ingresa el texto que desees encriptar o desencriptar</p1>
+                </div>
+                <div class="panel2" id="panel2s" style="display: none;">
+                        <h2 id="titulop2"></h2>
+                        <textarea class="text-out" id="msg-S" style="display: none;" type="text" contenteditable="false"></textarea>
+                        <input class="btn" type="button" value="COPIAR" id="boton-COP">
+                </div>
+            </aside>
+        </section>
+    </main>
+    <div>
+        <input id="checkbox" name="checkbox" type="checkbox">
+        <label class="checkbox-label" for="checkbox"></label></label>
+    </div>
+</body>
+<script src="cript.js"></script>
